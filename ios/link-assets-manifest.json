@@ -1,0 +1,97 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/asset/fonts/Poppins-Black.ttf",
+      "sha1": "048555c4d0c3a6022b480be4596b1c95d605d32b"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-BlackItalic.ttf",
+      "sha1": "14e5685922c5a5c5a7cdf23d5e84b78b521460aa"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Bold.ttf",
+      "sha1": "b9b65c039a1f10a5cb5e0726c6e7e18e98a8e517"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-BoldItalic.ttf",
+      "sha1": "5b2f8f7c4bbd52b6a1948c9781b45b17d31430ea"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-ExtraBold.ttf",
+      "sha1": "66815173c5954271fac6b3ef51076f186577ad6f"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-ExtraBoldItalic.ttf",
+      "sha1": "6e594e871a338027acb0774c5342c87fd2e3dac0"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-ExtraLight.ttf",
+      "sha1": "76ae3e4052ea2a21facd642ddd13cbaa80650fa6"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-ExtraLightItalic.ttf",
+      "sha1": "26d368932f85fcdef67fd9eafb640fbc49c7fe3e"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Italic.ttf",
+      "sha1": "597eeb5ac2ce09c6f57ee14457a91be9e4a826cd"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Light.ttf",
+      "sha1": "246982f0e815573f4915b4dd6f9861d56f147da2"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-LightItalic.ttf",
+      "sha1": "427dd3960115896d8553d40370642d0264bd2f8c"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Medium.ttf",
+      "sha1": "af7058373acbcf383dd114b8f9bbfb9faafd79eb"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-MediumItalic.ttf",
+      "sha1": "5633a4f50fb7cf79131b957beff9114b0997bdac"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Regular.ttf",
+      "sha1": "01d319c533f62ea29f03b5df8adfd4d93d2d2a38"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-SemiBold.ttf",
+      "sha1": "20b39c8b480c946b084d6aa09f12bf10b2ec5aa6"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-SemiBoldItalic.ttf",
+      "sha1": "45a72bb344bcb2975668fa89a410e24f05f68830"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-Thin.ttf",
+      "sha1": "c5c36432a1d00d653bde8a47f4c99171f02362e8"
+    },
+    {
+      "path": "src/asset/fonts/Poppins-ThinItalic.ttf",
+      "sha1": "0ae5e70e426adb3104852afb7a83a89bf3699260"
+    },
+    {
+      "path": "src/asset/fonts/Proxima Nova Alt Bold.otf",
+      "sha1": "44b0df572e9cf9389cd6d41a44e1d3425ac3cd20"
+    },
+    {
+      "path": "src/asset/fonts/Proxima Nova Alt Light.otf",
+      "sha1": "813f4df23bb5c7a45f886bac87744086c72baf2c"
+    },
+    {
+      "path": "src/asset/fonts/Proxima Nova Alt Regular.otf",
+      "sha1": "2f3cc6352584bf384116bf95482e0305b0aa335e"
+    },
+    {
+      "path": "src/asset/fonts/Proxima Nova Alt Semibold.otf",
+      "sha1": "0e7384ac2e994e4cb81fd142a34e5fe43f250b22"
+    },
+    {
+      "path": "src/asset/fonts/Proxima Nova Alt Thin.otf",
+      "sha1": "c8a0805e0903ce1a10b532d6d711d59b961ae673"
+    }
+  ]
+}
