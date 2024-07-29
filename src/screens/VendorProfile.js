@@ -309,6 +309,14 @@ const Profile = ({navigation}) => {
           </View>
           <Text style={styles.componentText}>Packages</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.componentView}
+          onPress={() => navigation.navigate('PackagePurchaseHistory')}>
+          <View style={styles.menuCon}>
+            {showIcon('claim', colours.primaryBlack, 16)}
+          </View>
+          <Text style={styles.componentText}>Package Purchase History</Text>
+        </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.componentView}
@@ -349,6 +357,14 @@ const Profile = ({navigation}) => {
             {showIcon('pendingpayment', colours.primaryBlack, 16)}
           </View>
           <Text style={styles.componentText}>Pending Payment</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.componentView}
+          onPress={() => navigation.navigate('ClaimHistory')}>
+          <View style={styles.menuCon}>
+            {showIcon('claim', colours.primaryBlack, 16)}
+          </View>
+          <Text style={styles.componentText}>Package Redeem History</Text>
         </TouchableOpacity>
 
         <TouchableOpacity

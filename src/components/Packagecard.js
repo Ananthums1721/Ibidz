@@ -106,6 +106,7 @@ const Packagecard = ({
       <View style={styles.priceCon}>
         <Text style={[styles.fontText1, {color: colours.blue}]}>
           ₹{packageAmount}
+          {/* {packageName} */}
           <Text style={styles.fontText6}> +GST</Text>
         </Text>
       </View>
@@ -121,9 +122,10 @@ const Packagecard = ({
 
       <View style={styles.nameCon}>
         <Text style={styles.fontText3}>
-          {packageName}{' '}
+          {packageName} {/* ₹{packageAmount} */}
           <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
-            ({packageAuction} BID tickets)
+            {/* ({packageAuction} BID tickets) */}({packageAuction} Auction
+            Listing)
           </Text>
         </Text>
       </View>

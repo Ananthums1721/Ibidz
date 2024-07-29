@@ -179,9 +179,18 @@ export const getDashBoardData = async () => {
 
 export const getPackageHis = async () => {
   let profile = JSON.parse(await AsyncStorage.getItem('profile'));
+
+  let userID = '';
+  if (profile[0]?.userMode === 'seller') {
+    userID = profile[0]?.sellerId ? profile[0]?.sellerId : '';
+  } else {
+    userID = profile[0]?.customerId ? profile[0]?.customerId : '';
+  }
+
   const URL = `?sp=getCustomerPackageHistory&custId=${
-    profile[0]?.customerId ? profile[0]?.customerId : ''
-  }`;
+    // profile[0]?.customerId ? profile[0]?.customerId : ''
+    userID
+  }&userType=${profile[0]?.userMode}`;
   let packageHistory = await get(URL);
   return packageHistory;
 };
@@ -206,9 +215,16 @@ export const getPaymentDues = async () => {
 
 export const getPaymentHistory = async () => {
   let profile = JSON.parse(await AsyncStorage.getItem('profile'));
-  const URL = `?sp=getPackageHistory&custId=${
-    profile[0]?.customerId ? profile[0]?.customerId : ''
-  }`;
+  let userID = '';
+  if (profile[0]?.userMode === 'seller') {
+    userID = profile[0]?.sellerId ? profile[0]?.sellerId : '';
+    console.log(userID, '11111');
+  } else {
+    console.log('222222');
+
+    userID = profile[0]?.customerId ? profile[0]?.customerId : '';
+  }
+  const URL = `?sp=getPackageHistory&userId=${userID}&userType=${profile[0]?.userMode}`;
   let paymentHistory = await get(URL);
   return paymentHistory;
 };
