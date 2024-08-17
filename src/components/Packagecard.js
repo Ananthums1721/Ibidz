@@ -105,12 +105,12 @@ const Packagecard = ({
       source={require('../asset/images/PackageBack.png')}>
       <View style={styles.priceCon}>
         <Text style={[styles.fontText1, {color: colours.blue}]}>
-          ₹{packageAmount}
-          {/* {packageName} */}
-          <Text style={styles.fontText6}> +GST</Text>
+          {/* ₹{packageAmount} */}
+          {packageName}
+          {/* <Text style={styles.fontText6}> +GST</Text>//  */}
         </Text>
       </View>
-      {redemable === true ? (
+      {/* {redemable === true ? (
         <View style={{marginTop: -16}}>
           <Text style={styles.fontText7}>
             (Purchased package can be redeemed on winnings)
@@ -118,11 +118,12 @@ const Packagecard = ({
         </View>
       ) : (
         ''
-      )}
+      )} */}
 
       <View style={styles.nameCon}>
         <Text style={styles.fontText3}>
-          {packageName} {/* ₹{packageAmount} */}
+          {/* {packageName} */}
+           ₹{packageAmount}
           <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
             {/* ({packageAuction} BID tickets) */}({packageAuction} Auction
             Listing)
@@ -135,16 +136,29 @@ const Packagecard = ({
             The {packageName} plan includes {packageAuction} auction listings at
             a time up to {packageValidity} Day(s)
           </Text> */}
-          <Text style={styles.fontText4}>{packageMessage}</Text>
+           <Text style={styles.fontText4}>
+            The {packageName} plan includes {packageAuction} auction 
+          </Text>
+          {/* <Text style={styles.fontText4}>{packageMessage}</Text> */}
         </View>
         <View style={styles.detailsInCon}>
           {packageAuction > 5000 ? (
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Text style={styles.fontText9}>{'ထ'} </Text>
-              <Text style={styles.fontText4}> Auctions</Text>
+              
+              {profile[0]?.userMode == 'seller' ? 
+              <Text style={styles.fontText4}> Vechile listings</Text>
+               : 
+               <Text style={styles.fontText4}> Auctions</Text> }
             </View>
-          ) : (
-            <Text style={styles.fontText4}>{packageAuction} Auctions</Text>
+          ) : (<View>
+            { profile[0]?.userMode == 'seller' ?
+            <Text style={styles.fontText4}>{packageAuction} Vechile listings</Text> 
+             : 
+                 <Text style={styles.fontText4}>{packageAuction} Auctions</Text> }
+
+          </View>
+            
           )}
         </View>
         <View style={[styles.detailsInCon, {borderBottomWidth: 0}]}>
