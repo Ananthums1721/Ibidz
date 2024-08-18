@@ -32,6 +32,7 @@ const Packagecard = ({
   onpress,
   redemable,
   packageMessage,
+  packageTitleMessage,
 }) => {
   const [razorpayRes, setRazorpayRes] = useState('');
   const {showLoader} = React.useContext(LoaderContext);
@@ -110,23 +111,26 @@ const Packagecard = ({
           {/* <Text style={styles.fontText6}> +GST</Text>//  */}
         </Text>
       </View>
-      {/* {redemable === true ? (
+      {redemable === true ? (
         <View style={{marginTop: -16}}>
           <Text style={styles.fontText7}>
-            (Purchased package can be redeemed on winnings)
+            {/* (Purchased package can be redeemed on winnings) */}
+            {packageTitleMessage}
           </Text>
         </View>
       ) : (
         ''
-      )} */}
+      )}
 
       <View style={styles.nameCon}>
         <Text style={styles.fontText3}>
-          {/* {packageName} */}
-           ₹{packageAmount}
-          <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
-            {/* ({packageAuction} BID tickets) */}({packageAuction} Auction
+          {/* {packageName} */}₹{packageAmount}
+          {/* <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
+        ({packageAuction} Auction
             Listing)
+          </Text> */}
+          <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
+            {/* {packageTitleMessage} */} (GST included)
           </Text>
         </Text>
       </View>
@@ -136,29 +140,32 @@ const Packagecard = ({
             The {packageName} plan includes {packageAuction} auction listings at
             a time up to {packageValidity} Day(s)
           </Text> */}
-           <Text style={styles.fontText4}>
-            The {packageName} plan includes {packageAuction} auction 
-          </Text>
-          {/* <Text style={styles.fontText4}>{packageMessage}</Text> */}
+          {/* <Text style={styles.fontText4}>
+            The {packageName} plan includes {packageAuction} auction
+          </Text> */}
+          <Text style={styles.fontText4}>{packageMessage}</Text>
         </View>
         <View style={styles.detailsInCon}>
           {packageAuction > 5000 ? (
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Text style={styles.fontText9}>{'ထ'} </Text>
-              
-              {profile[0]?.userMode == 'seller' ? 
-              <Text style={styles.fontText4}> Vechile listings</Text>
-               : 
-               <Text style={styles.fontText4}> Auctions</Text> }
-            </View>
-          ) : (<View>
-            { profile[0]?.userMode == 'seller' ?
-            <Text style={styles.fontText4}>{packageAuction} Vechile listings</Text> 
-             : 
-                 <Text style={styles.fontText4}>{packageAuction} Auctions</Text> }
 
-          </View>
-            
+              {profile[0]?.userMode == 'seller' ? (
+                <Text style={styles.fontText4}> Vechile listings</Text>
+              ) : (
+                <Text style={styles.fontText4}> Auctions</Text>
+              )}
+            </View>
+          ) : (
+            <View>
+              {profile[0]?.userMode == 'seller' ? (
+                <Text style={styles.fontText4}>
+                  {packageAuction} Vechile listings
+                </Text>
+              ) : (
+                <Text style={styles.fontText4}>{packageAuction} Auctions</Text>
+              )}
+            </View>
           )}
         </View>
         <View style={[styles.detailsInCon, {borderBottomWidth: 0}]}>

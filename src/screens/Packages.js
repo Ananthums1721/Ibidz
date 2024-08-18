@@ -76,6 +76,7 @@ const Packages = ({navigation}) => {
             navigation={navigation}
             redemable={item.isRedeemable}
             packageMessage={item.packageMessage}
+            packageTitleMessage={item.packTitleMsg}
             // onpress={()=>getPackages()}
           />
         )}
