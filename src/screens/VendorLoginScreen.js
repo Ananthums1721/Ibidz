@@ -265,7 +265,7 @@ const VendorLoginScreen = ({navigation}) => {
                   ]}
                   onPress={() => navigation.goBack()}>
                   {' '}
-                  Customer
+                  Buyer
                 </Text>
               </View>
             </View>

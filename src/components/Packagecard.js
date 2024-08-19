@@ -33,6 +33,7 @@ const Packagecard = ({
   redemable,
   packageMessage,
   packageTitleMessage,
+  gstPackAmount,
 }) => {
   const [razorpayRes, setRazorpayRes] = useState('');
   const {showLoader} = React.useContext(LoaderContext);
@@ -130,7 +131,7 @@ const Packagecard = ({
             Listing)
           </Text> */}
           <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
-            {/* {packageTitleMessage} */} (GST included)
+            {/* {packageTitleMessage} */} +GST (₹{gstPackAmount})
           </Text>
         </Text>
       </View>
