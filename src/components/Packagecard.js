@@ -58,7 +58,7 @@ const Packagecard = ({
       if (res != '') {
         var options = {
           currency: 'INR',
-          key: 'rzp_test_cWQhGghXCxe6cO', // Your api key
+          key: 'rzp_test_jW0cPc3T1WM5a8', // Your api key
           name: 'Ibidz',
           order_id: res[0]?.rp_token,
           amount: res[0]?.amount,
