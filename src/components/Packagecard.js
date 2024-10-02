@@ -56,7 +56,7 @@ const Packagecard = ({
       if (res != '') {
         var options = {
           currency: 'INR',
-          key: 'rzp_test_cWQhGghXCxe6cO', // Your api key
+          key: 'rzp_test_jW0cPc3T1WM5a8', // Your api key
           name: 'Ibidz',
           order_id: res[0]?.rp_token,
           amount: res[0]?.amount,
@@ -122,8 +122,7 @@ const Packagecard = ({
 
       <View style={styles.nameCon}>
         <Text style={styles.fontText3}>
-          {/* {packageName} */}
-           ₹{packageAmount}
+          {/* {packageName} */}₹{packageAmount}
           <Text style={[styles.fontText4, {color: colours.primaryWhite}]}>
             {/* ({packageAuction} BID tickets) */}({packageAuction} Auction
             Listing)
@@ -136,8 +135,8 @@ const Packagecard = ({
             The {packageName} plan includes {packageAuction} auction listings at
             a time up to {packageValidity} Day(s)
           </Text> */}
-           <Text style={styles.fontText4}>
-            The {packageName} plan includes {packageAuction} auction 
+          <Text style={styles.fontText4}>
+            The {packageName} plan includes {packageAuction} auction
           </Text>
           {/* <Text style={styles.fontText4}>{packageMessage}</Text> */}
         </View>
@@ -145,20 +144,23 @@ const Packagecard = ({
           {packageAuction > 5000 ? (
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Text style={styles.fontText9}>{'ထ'} </Text>
-              
-              {profile[0]?.userMode == 'seller' ? 
-              <Text style={styles.fontText4}> Vechile listings</Text>
-               : 
-               <Text style={styles.fontText4}> Auctions</Text> }
-            </View>
-          ) : (<View>
-            { profile[0]?.userMode == 'seller' ?
-            <Text style={styles.fontText4}>{packageAuction} Vechile listings</Text> 
-             : 
-                 <Text style={styles.fontText4}>{packageAuction} Auctions</Text> }
 
-          </View>
-            
+              {profile[0]?.userMode == 'seller' ? (
+                <Text style={styles.fontText4}> Vechile listings</Text>
+              ) : (
+                <Text style={styles.fontText4}> Auctions</Text>
+              )}
+            </View>
+          ) : (
+            <View>
+              {profile[0]?.userMode == 'seller' ? (
+                <Text style={styles.fontText4}>
+                  {packageAuction} Vechile listings
+                </Text>
+              ) : (
+                <Text style={styles.fontText4}>{packageAuction} Auctions</Text>
+              )}
+            </View>
           )}
         </View>
         <View style={[styles.detailsInCon, {borderBottomWidth: 0}]}>
