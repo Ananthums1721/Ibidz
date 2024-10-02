@@ -253,10 +253,10 @@ const VendorLoginScreen = ({navigation}) => {
                   width: windowWidth,
                   justifyContent: 'center',
                 }}>
-                <Text style={styles.fontStyle2}> Sign as</Text>
+                <Text style={styles.fontStyle3}> Sign as</Text>
                 <Text
                   style={[
-                    styles.fontStyle2,
+                    styles.fontStyle3,
                     {
                       color: colours.blue,
                       fontFamily: 'Poppins-Bold',
@@ -265,7 +265,7 @@ const VendorLoginScreen = ({navigation}) => {
                   ]}
                   onPress={() => navigation.goBack()}>
                   {' '}
-                  Customer
+                  Buyer
                 </Text>
               </View>
             </View>
