@@ -53,6 +53,7 @@ const Packagecard = ({
         packId: packageId,
         userType: profile[0]?.userMode,
       });
+
       setRazorpayRes(res[0]);
       showLoader(false);
       if (res != '') {
@@ -97,6 +98,13 @@ const Packagecard = ({
         );
       }
     } catch (error) {
+      if (error?.Message === 'Upgrade to a higher package to proceed ') {
+        Toast.show(error?.Message);
+      } else {
+        Toast.show(
+          'Sorry! Payment is unable to initiate at this time. Please contact our support.',
+        );
+      }
       showLoader(false);
     }
   };

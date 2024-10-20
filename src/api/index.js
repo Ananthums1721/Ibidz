@@ -112,8 +112,8 @@ export const getSearchData = async payload => {
   return search;
 };
 
-export const getItemDetails = async value => {
-  const URL = `?sp=getAuctionDetailsbyId&aucName=${value}`;
+export const getItemDetails = async (value, userId) => {
+  const URL = `?sp=getAuctionDetailsbyId&aucName=${value}&userId=${userId}`;
   let details = await get(URL);
   return details;
 };
@@ -434,6 +434,7 @@ export const getVendorPendingPayment = async () => {
 export const razorPayInfo = async payload => {
   const URL = ``;
   let reauction = await post(URL, payload);
+  console.log(reauction, '------------------');
   return reauction;
 };
 
