@@ -253,7 +253,7 @@ const RegisterScreen = ({ navigation }) => {
           />
           <View style={styles.innerContainer}>
             <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(14) }]}>Find your dream car!</Text>
-            <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(18), fontFamily: 'Poppins-Bold' }]}>Register as a Customer</Text>
+            <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(18), fontFamily: 'Poppins-Bold' }]}>Register as a Buyer</Text>
 
             <LoginTextInput
               OnChangeText={(text) => {
@@ -366,7 +366,7 @@ const RegisterScreen = ({ navigation }) => {
 
             <View style={{ flexDirection: 'row', width: '90%',marginTop: windowHeight * (1 / 100) }} >
               <View style={{ height: 2, flex: 1, alignSelf: 'center' }} />
-              <Text style={[styles.fontStyle3, { color: colours.primaryBlack, fontFamily: "Poppins-Regular" }]}> Register as a Vendor? </Text>
+              <Text style={[styles.fontStyle3, { color: colours.primaryBlack, fontFamily: "Poppins-Regular" }]}> Register as a Seller? </Text>
               <Text style={[styles.fontStyle3, { color: colours.blue, textDecorationLine: 'underline' }]} onPress={() => navigation.navigate('VendorRegister')}> Register</Text>
               <View style={{ height: 2, flex: 1, alignSelf: 'center' }} />
             </View>

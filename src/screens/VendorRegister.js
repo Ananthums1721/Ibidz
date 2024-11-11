@@ -275,7 +275,7 @@ const VendorRegister = ({ navigation }) => {
           />
           <View style={styles.innerContainer}>
             <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(16) }]}>Find your dream car!</Text>
-            <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(18), fontFamily: 'Poppins-Bold' }]}>Register as a Vendor</Text>
+            <Text style={[styles.fontStyle3, { paddingBottom: 5, textAlign: 'center', fontSize: getFontontSize(18), fontFamily: 'Poppins-Bold' }]}>Register as a Seller</Text>
 
             <LoginTextInput
               OnChangeText={(text) => {
@@ -419,7 +419,7 @@ const VendorRegister = ({ navigation }) => {
 
             <View style={{ flexDirection: 'row', width: '90%', marginTop: windowHeight * (2 / 100) }} >
               <View style={{ height: 2, flex: 1, alignSelf: 'center' }} />
-              <Text style={[styles.fontStyle3, { color: colours.primaryBlack, fontFamily: "Poppins-Regular" }]}>  Already Have an Vendor Account?</Text>
+              <Text style={[styles.fontStyle3, { color: colours.primaryBlack, fontFamily: "Poppins-Regular" }]}>  Already Have an Seller Account?</Text>
               <Text style={[styles.fontStyle3, { color: colours.blue, textDecorationLine: 'underline' }]} onPress={() => navigation.goBack()}> Sign In</Text>
               <View style={{ height: 2, flex: 1, alignSelf: 'center' }} />
             </View>
