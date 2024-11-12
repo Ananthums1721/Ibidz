@@ -78,8 +78,8 @@ android {
         applicationId "in.ibidz.customer"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 8
-        versionName "1.0.4"
+        versionCode 9
+        versionName "1.0.5"
     }
     signingConfigs {
         release {
